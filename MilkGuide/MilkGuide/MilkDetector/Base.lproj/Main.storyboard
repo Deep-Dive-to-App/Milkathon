@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L21-ai-Z4R">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -56,14 +56,14 @@
                             <constraint firstItem="ofU-sR-Cj0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lCC-nm-KQs"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="우유 찾기" selectedImage="magnifyingglass" catalog="system" id="MHK-MV-Sfb"/>
+                    <tabBarItem key="tabBarItem" title="우유 찾기" image="magnifyingglass" catalog="system" id="MHK-MV-Sfb"/>
                     <connections>
                         <outlet property="cameraButton" destination="ofU-sR-Cj0" id="Fps-dc-1Uh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-529.23076923076917" y="322.74881516587675"/>
+            <point key="canvasLocation" x="-1337" y="323"/>
         </scene>
         <!--Image Classification View Controller-->
         <scene sceneID="uzu-oh-4RN">
@@ -106,7 +106,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJ4-JG-PNI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="169" y="323"/>
+            <point key="canvasLocation" x="-634" y="323"/>
+        </scene>
+        <!--SettingViewController-->
+        <scene sceneID="lfp-2J-vz4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Setting" referencedIdentifier="SettingViewController" id="bBd-Qb-cCk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="BYy-8C-WWm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RSG-mV-4xc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218" y="-136"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="N0F-y7-h9g">
@@ -167,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYB-Vh-QXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="323"/>
+            <point key="canvasLocation" x="86" y="323"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="Rgv-vx-3rH">
@@ -176,11 +186,11 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OzN-3N-wf2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.73605054619999999" green="0.60542649029999995" blue="0.5097871423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.42223021389999998" green="0.2097753882" blue="0.023445226249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="sb0-RI-M8b"/>
+                        <segue destination="bBd-Qb-cCk" kind="relationship" relationship="viewControllers" id="d84-TW-dLi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQj-Lc-gak" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
