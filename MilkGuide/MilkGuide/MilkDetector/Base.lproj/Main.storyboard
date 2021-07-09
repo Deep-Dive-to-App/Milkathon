@@ -182,7 +182,7 @@
         <!--Main Tab Bar Controller-->
         <scene sceneID="Rgv-vx-3rH">
             <objects>
-                <tabBarController id="L21-ai-Z4R" customClass="MainTabBarController" customModule="MilkGuide" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" id="L21-ai-Z4R" customClass="MainTabBarController" customModule="MilkGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OzN-3N-wf2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

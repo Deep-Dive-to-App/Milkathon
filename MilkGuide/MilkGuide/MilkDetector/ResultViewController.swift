@@ -30,9 +30,9 @@ class ResultViewController: UIViewController {
         }
     }
     @IBAction func homeButtonTapped(_ sender: Any) {
-        let milkDetectorVC = self.storyboard?.instantiateViewController(identifier: "MilkDetectorViewController") as! MilkDetectorViewController
-        milkDetectorVC.modalPresentationStyle = .fullScreen
-        present(milkDetectorVC, animated: false, completion: nil)
+        let mainTapBarC = self.storyboard?.instantiateViewController(identifier: "MainTabBarController") as! MainTabBarController
+        mainTapBarC.modalPresentationStyle = .fullScreen
+        present(mainTapBarC, animated: false, completion: nil)
     }
 }
 
