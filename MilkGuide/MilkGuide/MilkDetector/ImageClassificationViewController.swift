@@ -69,13 +69,28 @@ class ImageClassificationViewController: UIViewController {
                 return
             }
             let classifications = results as! [VNClassificationObservation]
+//            let classifications = results as! [VNCoreMLFeatureValueObservation]
             if classifications.isEmpty {
                 self.result = "알 수 없음"
             } else {
+                /// VNClassificationObservation processing
                 let topClassification = classifications.prefix(1)
+                let prediction = topClassification.first?.identifier
+                
+                /// VNCoreMLFeatureValueObservation processing
+                /*let topClassification = classifications.first?.featureValue.multiArrayValue
+                var maxValue: Float32 = 0
+                var prediction = ""
+                for i in 0..<topClassification!.count {
+                    
+                    if maxValue < topClassification![i].floatValue {
+                        
+                        maxValue = topClassification![i].floatValue
+                        prediction = String(i)
+                    }
+                }*/
 //                print(classifications.description)
 //                print(topClassification)
-                let prediction = topClassification.first?.identifier
                 switch prediction {
                 case "0":
                     self.result = "딸기우유"
