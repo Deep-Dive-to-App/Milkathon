@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="THEHongchaLefthand.ttf">
+            <string>THEHongchaLefthand</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="GXk-WU-O5y">
+            <objects>
+                <navigationController id="09T-rM-yZR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zet-9w-d9S">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACd-sH-5iR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="-812"/>
+        </scene>
+        <!--세팅-->
+        <scene sceneID="HgC-H5-o06">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" id="NKo-QA-QnB" customClass="SettingViewController" customModule="MilkGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XoZ-Mn-FBB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esA-lb-TgX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MilkGuide 🥛" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KJ-SB-RH2">
+                                        <rect key="frame" x="107" y="25" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="QHA-w6-Cri"/>
+                                            <constraint firstAttribute="height" constant="50" id="Xf5-ep-pHK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="THEHongchaLefthand" family="THEHongcha Lefthand" pointSize="34"/>
+                                        <color key="textColor" red="0.73605054619999999" green="0.60542649029999995" blue="0.5097871423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9995927215" green="0.97318893669999995" blue="0.93332856890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Fke-sW-gbI"/>
+                                    <constraint firstItem="6KJ-SB-RH2" firstAttribute="centerY" secondItem="esA-lb-TgX" secondAttribute="centerY" id="GEN-D6-Vok"/>
+                                    <constraint firstItem="6KJ-SB-RH2" firstAttribute="centerX" secondItem="esA-lb-TgX" secondAttribute="centerX" id="JLS-FW-94v"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qhM-ze-qfq">
+                                <rect key="frame" x="0.0" y="152" width="414" height="661"/>
+                                <color key="backgroundColor" red="0.9995927215" green="0.97318893669999995" blue="0.93332856890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="0.9995927215" green="0.97318893669999995" blue="0.93332856890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SettingCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SettingCell" rowHeight="74" id="8LB-3m-WGs" customClass="SettingCell" customModule="MilkGuide" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8LB-3m-WGs" id="1Cr-ID-TdR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVA-W7-7yS">
+                                                    <rect key="frame" x="20" y="24.5" width="45" height="25.5"/>
+                                                    <fontDescription key="fontDescription" name="THEHongchaLefthand" family="THEHongcha Lefthand" pointSize="21"/>
+                                                    <color key="textColor" red="0.42223021389999998" green="0.2097753882" blue="0.023445226249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0S-mU-A1C">
+                                                    <rect key="frame" x="20" y="73" width="374" height="1"/>
+                                                    <color key="backgroundColor" red="0.42223021389999998" green="0.2097753882" blue="0.023445226249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="8fv-MU-WMV"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.9995927215" green="0.97318893669999995" blue="0.93332856890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="tintColor" red="0.42223021389999998" green="0.2097753882" blue="0.023445226249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstItem="BVA-W7-7yS" firstAttribute="centerY" secondItem="1Cr-ID-TdR" secondAttribute="centerY" id="0Ye-e4-KMy"/>
+                                                <constraint firstItem="BVA-W7-7yS" firstAttribute="leading" secondItem="1Cr-ID-TdR" secondAttribute="leading" constant="20" id="2AK-GU-lbP"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BVA-W7-7yS" secondAttribute="trailing" constant="20" id="ZKx-DL-F29"/>
+                                                <constraint firstAttribute="trailing" secondItem="S0S-mU-A1C" secondAttribute="trailing" constant="20" id="sLT-Pe-quV"/>
+                                                <constraint firstItem="S0S-mU-A1C" firstAttribute="leading" secondItem="1Cr-ID-TdR" secondAttribute="leading" constant="20" id="vzU-Rn-jFt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="S0S-mU-A1C" secondAttribute="bottom" id="VmB-W1-7Gj"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="settingTitle" destination="BVA-W7-7yS" id="GjN-iE-KjR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NKo-QA-QnB" id="yLr-mj-rFL"/>
+                                    <outlet property="delegate" destination="NKo-QA-QnB" id="G45-sP-QVO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LYI-ks-Fs0"/>
+                        <color key="backgroundColor" red="0.9995927215" green="0.97318893669999995" blue="0.93332856890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="LYI-ks-Fs0" firstAttribute="bottom" secondItem="qhM-ze-qfq" secondAttribute="bottom" id="Bih-TX-98h"/>
+                            <constraint firstItem="LYI-ks-Fs0" firstAttribute="trailing" secondItem="qhM-ze-qfq" secondAttribute="trailing" id="TEE-qD-LNP"/>
+                            <constraint firstItem="esA-lb-TgX" firstAttribute="top" secondItem="LYI-ks-Fs0" secondAttribute="top" id="pIj-HH-eg7"/>
+                            <constraint firstItem="LYI-ks-Fs0" firstAttribute="trailing" secondItem="esA-lb-TgX" secondAttribute="trailing" id="sho-gR-gKZ"/>
+                            <constraint firstItem="qhM-ze-qfq" firstAttribute="leading" secondItem="LYI-ks-Fs0" secondAttribute="leading" id="tVw-I8-is1"/>
+                            <constraint firstItem="esA-lb-TgX" firstAttribute="leading" secondItem="LYI-ks-Fs0" secondAttribute="leading" id="ti5-OR-veE"/>
+                            <constraint firstItem="qhM-ze-qfq" firstAttribute="top" secondItem="esA-lb-TgX" secondAttribute="bottom" constant="8" symbolic="YES" id="umF-qX-xW9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="세팅" image="gear" catalog="system" id="Jtu-bZ-G5e"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UTC-2c-T3x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213.04347826086959" y="-126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
+    </resources>
+</document>

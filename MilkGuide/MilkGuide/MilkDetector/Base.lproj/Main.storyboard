@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L21-ai-Z4R">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BMEULJIRO.otf">
+            <string>BMEULJIRO</string>
+        </array>
+        <array key="THEHongchaLefthand.ttf">
+            <string>THEHongchaLefthand</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--우유 찾기-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MilkDetectorViewController" id="BYZ-38-t0r" customClass="MilkDetectorViewController" customModule="MilkGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofU-sR-Cj0">
+                                <rect key="frame" x="104" y="625" width="182" height="66"/>
+                                <color key="backgroundColor" red="0.73605054619999999" green="0.60542649029999995" blue="0.5097871423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="pAj-qz-MjW"/>
+                                    <constraint firstAttribute="height" constant="66" id="rOz-4P-VOm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="THEHongchaLefthand" family="THEHongcha Lefthand" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="사진 찍기"/>
+                                <connections>
+                                    <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Mw-vT-qap"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="img_milkguide" translatesAutoresizingMaskIntoConstraints="NO" id="NOp-Mf-7Gx">
+                                <rect key="frame" x="16" y="221" width="345" height="345"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="345" id="9uj-60-sc8"/>
+                                    <constraint firstAttribute="width" constant="345" id="EUg-d6-eNp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.9995927215" green="0.97318893669999995" blue="0.93332856890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="NOp-Mf-7Gx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="3df-Tl-fd2"/>
+                            <constraint firstItem="NOp-Mf-7Gx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GTO-YR-GdU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ofU-sR-Cj0" secondAttribute="bottom" constant="70" id="jm0-fo-W3W"/>
+                            <constraint firstItem="ofU-sR-Cj0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lCC-nm-KQs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="우유 찾기" image="magnifyingglass" catalog="system" id="MHK-MV-Sfb"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="ofU-sR-Cj0" id="Fps-dc-1Uh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1337" y="323"/>
+        </scene>
+        <!--Image Classification View Controller-->
+        <scene sceneID="uzu-oh-4RN">
+            <objects>
+                <viewController storyboardIdentifier="ImageClassificationViewController" id="Tk4-Bw-FvO" customClass="ImageClassificationViewController" customModule="MilkGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="phg-PC-NJb">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분석중" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwq-f2-C7n">
+                                <rect key="frame" x="95" y="244" width="200" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="dSS-cP-rCa"/>
+                                    <constraint firstAttribute="height" constant="80" id="flS-ZV-GIh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="THEHongchaLefthand" family="THEHongcha Lefthand" pointSize="70"/>
+                                <color key="textColor" red="0.42223021389999998" green="0.2097753882" blue="0.023445226249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" systemColor="systemBlueColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="∙∙∙" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnq-8s-LdH">
+                                <rect key="frame" x="87" y="385" width="216" height="201"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.73605054619999999" green="0.60542649029999995" blue="0.5097871423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="BMEULJIRO" family="BM EULJIRO" pointSize="130"/>
+                                <color key="textColor" red="0.73605054619999999" green="0.60542649029999995" blue="0.5097871423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.73605054619999999" green="0.60542649029999995" blue="0.5097871423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xNm-QZ-FVA"/>
+                        <color key="backgroundColor" red="0.9995927215" green="0.97318893669999995" blue="0.93332856890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xNm-QZ-FVA" firstAttribute="bottom" secondItem="hnq-8s-LdH" secondAttribute="bottom" constant="224" id="Oek-tq-dkH"/>
+                            <constraint firstItem="Hwq-f2-C7n" firstAttribute="centerX" secondItem="xNm-QZ-FVA" secondAttribute="centerX" id="kai-Pa-s7G"/>
+                            <constraint firstItem="Hwq-f2-C7n" firstAttribute="top" secondItem="xNm-QZ-FVA" secondAttribute="top" constant="200" id="lTa-EK-0tr"/>
+                            <constraint firstItem="hnq-8s-LdH" firstAttribute="centerX" secondItem="xNm-QZ-FVA" secondAttribute="centerX" id="wX7-6l-Dmc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJ4-JG-PNI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-634" y="323"/>
+        </scene>
+        <!--SettingViewController-->
+        <scene sceneID="lfp-2J-vz4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Setting" referencedIdentifier="SettingViewController" id="bBd-Qb-cCk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="BYy-8C-WWm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RSG-mV-4xc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218" y="-136"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="N0F-y7-h9g">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" id="PDc-oV-p82" customClass="ResultViewController" customModule="MilkGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8XP-Id-zWI">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gar-mW-kfh">
+                                <rect key="frame" x="75" y="171" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4y6-Ts-Y23"/>
+                                    <constraint firstAttribute="height" constant="240" id="gU0-y7-4fG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiI-De-fZA">
+                                <rect key="frame" x="104" y="654" width="182" height="66"/>
+                                <color key="backgroundColor" red="0.73605054619999999" green="0.60542649029999995" blue="0.5097871423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="EJ9-yF-M9O"/>
+                                    <constraint firstAttribute="width" constant="182" id="NqO-gt-Few"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="THEHongchaLefthand" family="THEHongcha Lefthand" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="메인 화면으로"/>
+                                <connections>
+                                    <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJi-tA-5ei"/>
+                                    <action selector="homeButtonTapped:" destination="PDc-oV-p82" eventType="touchUpInside" id="a2k-Hr-2ck"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="바나나우유" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwV-Fc-bzF">
+                                <rect key="frame" x="108.33333333333333" y="441" width="173.66666666666669" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="j0k-ba-RON"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="THEHongchaLefthand" family="THEHongcha Lefthand" pointSize="50"/>
+                                <color key="textColor" red="0.42223021389999998" green="0.2097753882" blue="0.023445226249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5qy-s4-Z7N"/>
+                        <color key="backgroundColor" red="0.9995927215" green="0.97318893669999995" blue="0.93332856890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="QwV-Fc-bzF" firstAttribute="top" secondItem="gar-mW-kfh" secondAttribute="bottom" constant="30" id="BvV-s2-aPX"/>
+                            <constraint firstItem="5qy-s4-Z7N" firstAttribute="bottom" secondItem="yiI-De-fZA" secondAttribute="bottom" constant="90" id="DZr-TV-VXG"/>
+                            <constraint firstItem="yiI-De-fZA" firstAttribute="centerX" secondItem="5qy-s4-Z7N" secondAttribute="centerX" id="L6p-b9-Rdd"/>
+                            <constraint firstItem="gar-mW-kfh" firstAttribute="centerX" secondItem="5qy-s4-Z7N" secondAttribute="centerX" id="eRY-vi-Whc"/>
+                            <constraint firstItem="QwV-Fc-bzF" firstAttribute="centerX" secondItem="gar-mW-kfh" secondAttribute="centerX" id="kE1-oO-w5Z"/>
+                            <constraint firstItem="gar-mW-kfh" firstAttribute="top" secondItem="5qy-s4-Z7N" secondAttribute="top" constant="127" id="vqR-8h-krL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goHomeButton" destination="yiI-De-fZA" id="sDf-7y-0h6"/>
+                        <outlet property="imageView" destination="gar-mW-kfh" id="hzF-Zy-6Ck"/>
+                        <outlet property="resultLabel" destination="QwV-Fc-bzF" id="Htj-1w-oPC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYB-Vh-QXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="323"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="Rgv-vx-3rH">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" id="L21-ai-Z4R" customClass="MainTabBarController" customModule="MilkGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OzN-3N-wf2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="selectedImageTintColor" red="0.42223021389999998" green="0.2097753882" blue="0.023445226249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="sb0-RI-M8b"/>
+                        <segue destination="bBd-Qb-cCk" kind="relationship" relationship="viewControllers" id="d84-TW-dLi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQj-Lc-gak" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="-644"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_milkguide" width="1080" height="1080"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

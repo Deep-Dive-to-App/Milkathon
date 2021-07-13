@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F037D892686AC6300CC2E0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037D882686AC6300CC2E0A /* AppDelegate.swift */; };
+		4F037D8B2686AC6300CC2E0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037D8A2686AC6300CC2E0A /* SceneDelegate.swift */; };
+		4F037D8D2686AC6300CC2E0A /* MilkDetectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037D8C2686AC6300CC2E0A /* MilkDetectorViewController.swift */; };
+		4F037D902686AC6300CC2E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F037D8E2686AC6300CC2E0A /* Main.storyboard */; };
+		4F037D952686AC6400CC2E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F037D932686AC6400CC2E0A /* LaunchScreen.storyboard */; };
+		4F037DA02686AC6400CC2E0A /* MilkGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037D9F2686AC6400CC2E0A /* MilkGuideTests.swift */; };
+		4F037DAB2686AC6400CC2E0A /* MilkGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037DAA2686AC6400CC2E0A /* MilkGuideUITests.swift */; };
+		4F037DBF2686C13700CC2E0A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F037DBE2686C13700CC2E0A /* MainTabBarController.swift */; };
+		4F374D532686C505007BA65C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D522686C505007BA65C /* CameraViewController.swift */; };
+		4F374D572686C9D1007BA65C /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D562686C9D1007BA65C /* PreviewView.swift */; };
+		4F374D5B26870520007BA65C /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F374D5A26870520007BA65C /* Camera.storyboard */; };
+		4F374D5F26871BF8007BA65C /* MilkClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D5E26871BF8007BA65C /* MilkClassifier.mlmodel */; };
+		4F374D6126872197007BA65C /* ImageClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6026872197007BA65C /* ImageClassificationViewController.swift */; };
+		4F374D6326872392007BA65C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6226872392007BA65C /* ResultViewController.swift */; };
+		4F374D6526872FF7007BA65C /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */; };
+		4F45C5DE268A158E004706A8 /* THEHongchaLefthand.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FFF8429268A068000993E2D /* THEHongchaLefthand.ttf */; };
+		4F65919026877B280029C793 /* ClassificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F65918F26877B280029C793 /* ClassificationInfo.swift */; };
+		4FA26BA72695C46000B197FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F037D912686AC6400CC2E0A /* Assets.xcassets */; };
+		4FC34A50269573F8000A45B8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC34A4F269573F8000A45B8 /* SettingViewController.swift */; };
+		4FC34A5226957557000A45B8 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC34A5126957557000A45B8 /* Setting.storyboard */; };
+		4FE3CF5526903945004C258B /* milk_1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3CF5426903945004C258B /* milk_1.mlmodel */; };
+		4FF2335D26984CBB0059EA20 /* milk_2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2335C26984CBB0059EA20 /* milk_2.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F037D9C2686AC6400CC2E0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F037D7D2686AC6300CC2E0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F037D842686AC6300CC2E0A;
+			remoteInfo = MilkGuide;
+		};
+		4F037DA72686AC6400CC2E0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F037D7D2686AC6300CC2E0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F037D842686AC6300CC2E0A;
+			remoteInfo = MilkGuide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F037D852686AC6300CC2E0A /* MilkGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MilkGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F037D882686AC6300CC2E0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F037D8A2686AC6300CC2E0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4F037D8C2686AC6300CC2E0A /* MilkDetectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkDetectorViewController.swift; sourceTree = "<group>"; };
+		4F037D8F2686AC6300CC2E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F037D912686AC6400CC2E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F037D942686AC6400CC2E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F037D962686AC6400CC2E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F037D9B2686AC6400CC2E0A /* MilkGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MilkGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F037D9F2686AC6400CC2E0A /* MilkGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkGuideTests.swift; sourceTree = "<group>"; };
+		4F037DA12686AC6400CC2E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F037DA62686AC6400CC2E0A /* MilkGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MilkGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F037DAA2686AC6400CC2E0A /* MilkGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkGuideUITests.swift; sourceTree = "<group>"; };
+		4F037DAC2686AC6400CC2E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F037DBE2686C13700CC2E0A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		4F374D522686C505007BA65C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		4F374D562686C9D1007BA65C /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		4F374D5A26870520007BA65C /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		4F374D5E26871BF8007BA65C /* MilkClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MilkClassifier.mlmodel; sourceTree = "<group>"; };
+		4F374D6026872197007BA65C /* ImageClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationViewController.swift; sourceTree = "<group>"; };
+		4F374D6226872392007BA65C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		4F65918F26877B280029C793 /* ClassificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationInfo.swift; sourceTree = "<group>"; };
+		4FC34A4F269573F8000A45B8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		4FC34A5126957557000A45B8 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		4FE3CF5426903945004C258B /* milk_1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = milk_1.mlmodel; sourceTree = "<group>"; };
+		4FF2335C26984CBB0059EA20 /* milk_2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = milk_2.mlmodel; sourceTree = "<group>"; };
+		4FFF8429268A068000993E2D /* THEHongchaLefthand.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = THEHongchaLefthand.ttf; path = MilkGuide/Font/THEHongchaLefthand.ttf; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F037D822686AC6300CC2E0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F037D982686AC6400CC2E0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F037DA32686AC6400CC2E0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F037D7C2686AC6300CC2E0A = {
+			isa = PBXGroup;
+			children = (
+				4F037D872686AC6300CC2E0A /* MilkGuide */,
+				4F037D9E2686AC6400CC2E0A /* MilkGuideTests */,
+				4F037DA92686AC6400CC2E0A /* MilkGuideUITests */,
+				4F037D862686AC6300CC2E0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F037D862686AC6300CC2E0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F037D852686AC6300CC2E0A /* MilkGuide.app */,
+				4F037D9B2686AC6400CC2E0A /* MilkGuideTests.xctest */,
+				4F037DA62686AC6400CC2E0A /* MilkGuideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F037D872686AC6300CC2E0A /* MilkGuide */ = {
+			isa = PBXGroup;
+			children = (
+				4F037D882686AC6300CC2E0A /* AppDelegate.swift */,
+				4F037D8A2686AC6300CC2E0A /* SceneDelegate.swift */,
+				4F037DBD2686B08B00CC2E0A /* MilkDetector */,
+				4F374D552686C9A9007BA65C /* Camera */,
+				4FC34A4E269573A5000A45B8 /* Setting */,
+				4F037DB82686AEFB00CC2E0A /* Font */,
+				4F037DBE2686C13700CC2E0A /* MainTabBarController.swift */,
+				4F037D912686AC6400CC2E0A /* Assets.xcassets */,
+				4F037D932686AC6400CC2E0A /* LaunchScreen.storyboard */,
+				4F037D962686AC6400CC2E0A /* Info.plist */,
+			);
+			path = MilkGuide;
+			sourceTree = "<group>";
+		};
+		4F037D9E2686AC6400CC2E0A /* MilkGuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F037D9F2686AC6400CC2E0A /* MilkGuideTests.swift */,
+				4F037DA12686AC6400CC2E0A /* Info.plist */,
+			);
+			path = MilkGuideTests;
+			sourceTree = "<group>";
+		};
+		4F037DA92686AC6400CC2E0A /* MilkGuideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F037DAA2686AC6400CC2E0A /* MilkGuideUITests.swift */,
+				4F037DAC2686AC6400CC2E0A /* Info.plist */,
+			);
+			path = MilkGuideUITests;
+			sourceTree = "<group>";
+		};
+		4F037DB82686AEFB00CC2E0A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				4FFF8429268A068000993E2D /* THEHongchaLefthand.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		4F037DBD2686B08B00CC2E0A /* MilkDetector */ = {
+			isa = PBXGroup;
+			children = (
+				4F037D8E2686AC6300CC2E0A /* Main.storyboard */,
+				4F037D8C2686AC6300CC2E0A /* MilkDetectorViewController.swift */,
+				4F374D6026872197007BA65C /* ImageClassificationViewController.swift */,
+				4F374D6226872392007BA65C /* ResultViewController.swift */,
+				4F374D5E26871BF8007BA65C /* MilkClassifier.mlmodel */,
+				4FE3CF5426903945004C258B /* milk_1.mlmodel */,
+				4FF2335C26984CBB0059EA20 /* milk_2.mlmodel */,
+				4F374D6426872FF7007BA65C /* CGImagePropertyOrientation.swift */,
+				4F65918F26877B280029C793 /* ClassificationInfo.swift */,
+			);
+			path = MilkDetector;
+			sourceTree = "<group>";
+		};
+		4F374D552686C9A9007BA65C /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				4F374D5A26870520007BA65C /* Camera.storyboard */,
+				4F374D522686C505007BA65C /* CameraViewController.swift */,
+				4F374D562686C9D1007BA65C /* PreviewView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		4FC34A4E269573A5000A45B8 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				4FC34A4F269573F8000A45B8 /* SettingViewController.swift */,
+				4FC34A5126957557000A45B8 /* Setting.storyboard */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F037D842686AC6300CC2E0A /* MilkGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F037DAF2686AC6400CC2E0A /* Build configuration list for PBXNativeTarget "MilkGuide" */;
+			buildPhases = (
+				4F037D812686AC6300CC2E0A /* Sources */,
+				4F037D822686AC6300CC2E0A /* Frameworks */,
+				4F037D832686AC6300CC2E0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MilkGuide;
+			productName = MilkGuide;
+			productReference = 4F037D852686AC6300CC2E0A /* MilkGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F037D9A2686AC6400CC2E0A /* MilkGuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F037DB22686AC6400CC2E0A /* Build configuration list for PBXNativeTarget "MilkGuideTests" */;
+			buildPhases = (
+				4F037D972686AC6400CC2E0A /* Sources */,
+				4F037D982686AC6400CC2E0A /* Frameworks */,
+				4F037D992686AC6400CC2E0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F037D9D2686AC6400CC2E0A /* PBXTargetDependency */,
+			);
+			name = MilkGuideTests;
+			productName = MilkGuideTests;
+			productReference = 4F037D9B2686AC6400CC2E0A /* MilkGuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F037DA52686AC6400CC2E0A /* MilkGuideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F037DB52686AC6400CC2E0A /* Build configuration list for PBXNativeTarget "MilkGuideUITests" */;
+			buildPhases = (
+				4F037DA22686AC6400CC2E0A /* Sources */,
+				4F037DA32686AC6400CC2E0A /* Frameworks */,
+				4F037DA42686AC6400CC2E0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F037DA82686AC6400CC2E0A /* PBXTargetDependency */,
+			);
+			name = MilkGuideUITests;
+			productName = MilkGuideUITests;
+			productReference = 4F037DA62686AC6400CC2E0A /* MilkGuideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F037D7D2686AC6300CC2E0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4F037D842686AC6300CC2E0A = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					4F037D9A2686AC6400CC2E0A = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 4F037D842686AC6300CC2E0A;
+					};
+					4F037DA52686AC6400CC2E0A = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 4F037D842686AC6300CC2E0A;
+					};
+				};
+			};
+			buildConfigurationList = 4F037D802686AC6300CC2E0A /* Build configuration list for PBXProject "MilkGuide" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F037D7C2686AC6300CC2E0A;
+			productRefGroup = 4F037D862686AC6300CC2E0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F037D842686AC6300CC2E0A /* MilkGuide */,
+				4F037D9A2686AC6400CC2E0A /* MilkGuideTests */,
+				4F037DA52686AC6400CC2E0A /* MilkGuideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F037D832686AC6300CC2E0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F374D5B26870520007BA65C /* Camera.storyboard in Resources */,
+				4F45C5DE268A158E004706A8 /* THEHongchaLefthand.ttf in Resources */,
+				4F037D952686AC6400CC2E0A /* LaunchScreen.storyboard in Resources */,
+				4F037D902686AC6300CC2E0A /* Main.storyboard in Resources */,
+				4FA26BA72695C46000B197FF /* Assets.xcassets in Resources */,
+				4FC34A5226957557000A45B8 /* Setting.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F037D992686AC6400CC2E0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F037DA42686AC6400CC2E0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F037D812686AC6300CC2E0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F374D6126872197007BA65C /* ImageClassificationViewController.swift in Sources */,
+				4F374D5F26871BF8007BA65C /* MilkClassifier.mlmodel in Sources */,
+				4F037D8D2686AC6300CC2E0A /* MilkDetectorViewController.swift in Sources */,
+				4FC34A50269573F8000A45B8 /* SettingViewController.swift in Sources */,
+				4F374D532686C505007BA65C /* CameraViewController.swift in Sources */,
+				4F037D892686AC6300CC2E0A /* AppDelegate.swift in Sources */,
+				4FF2335D26984CBB0059EA20 /* milk_2.mlmodel in Sources */,
+				4F037DBF2686C13700CC2E0A /* MainTabBarController.swift in Sources */,
+				4F374D6526872FF7007BA65C /* CGImagePropertyOrientation.swift in Sources */,
+				4F037D8B2686AC6300CC2E0A /* SceneDelegate.swift in Sources */,
+				4F65919026877B280029C793 /* ClassificationInfo.swift in Sources */,
+				4F374D572686C9D1007BA65C /* PreviewView.swift in Sources */,
+				4F374D6326872392007BA65C /* ResultViewController.swift in Sources */,
+				4FE3CF5526903945004C258B /* milk_1.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F037D972686AC6400CC2E0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F037DA02686AC6400CC2E0A /* MilkGuideTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F037DA22686AC6400CC2E0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F037DAB2686AC6400CC2E0A /* MilkGuideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F037D9D2686AC6400CC2E0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F037D842686AC6300CC2E0A /* MilkGuide */;
+			targetProxy = 4F037D9C2686AC6400CC2E0A /* PBXContainerItemProxy */;
+		};
+		4F037DA82686AC6400CC2E0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F037D842686AC6300CC2E0A /* MilkGuide */;
+			targetProxy = 4F037DA72686AC6400CC2E0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F037D8E2686AC6300CC2E0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F037D8F2686AC6300CC2E0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4F037D932686AC6400CC2E0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F037D942686AC6400CC2E0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F037DAD2686AC6400CC2E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F037DAE2686AC6400CC2E0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F037DB02686AC6400CC2E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HAA376DX53;
+				INFOPLIST_FILE = MilkGuide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heegee.MilkGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F037DB12686AC6400CC2E0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HAA376DX53;
+				INFOPLIST_FILE = MilkGuide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heegee.MilkGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F037DB32686AC6400CC2E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HAA376DX53;
+				INFOPLIST_FILE = MilkGuideTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heegee.MilkGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MilkGuide.app/MilkGuide";
+			};
+			name = Debug;
+		};
+		4F037DB42686AC6400CC2E0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HAA376DX53;
+				INFOPLIST_FILE = MilkGuideTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heegee.MilkGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MilkGuide.app/MilkGuide";
+			};
+			name = Release;
+		};
+		4F037DB62686AC6400CC2E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HAA376DX53;
+				INFOPLIST_FILE = MilkGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heegee.MilkGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MilkGuide;
+			};
+			name = Debug;
+		};
+		4F037DB72686AC6400CC2E0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HAA376DX53;
+				INFOPLIST_FILE = MilkGuideUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heegee.MilkGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MilkGuide;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F037D802686AC6300CC2E0A /* Build configuration list for PBXProject "MilkGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F037DAD2686AC6400CC2E0A /* Debug */,
+				4F037DAE2686AC6400CC2E0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F037DAF2686AC6400CC2E0A /* Build configuration list for PBXNativeTarget "MilkGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F037DB02686AC6400CC2E0A /* Debug */,
+				4F037DB12686AC6400CC2E0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F037DB22686AC6400CC2E0A /* Build configuration list for PBXNativeTarget "MilkGuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F037DB32686AC6400CC2E0A /* Debug */,
+				4F037DB42686AC6400CC2E0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F037DB52686AC6400CC2E0A /* Build configuration list for PBXNativeTarget "MilkGuideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F037DB62686AC6400CC2E0A /* Debug */,
+				4F037DB72686AC6400CC2E0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F037D7D2686AC6300CC2E0A /* Project object */;
+}
