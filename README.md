@@ -1,3 +1,26 @@
+# MilkGuide
+
+> AI로 우유를 알려줄게!
+
+### 소개글
+
+우유 종류를 먹어보지 않으면 알기 어려운 시각장애인 분들을 위하여, 사진으로 손쉽게 우유 종류를 알려주는 우유 Detecting 앱입니다. 🌝
+
+<img src="https://user-images.githubusercontent.com/47033052/125451223-2816796c-a711-4493-a14f-d83307c85013.PNG" width="20%" height="20%"/>  <img src="https://user-images.githubusercontent.com/47033052/125451490-3ea6ee3a-a1b0-42a9-a031-376b19d5e293.png" width="20%" height="20%" /> <img src="https://user-images.githubusercontent.com/47033052/125451210-d07640a7-7dd9-41e3-8942-97374b4943f0.PNG" width="20%" height="20%" /> <img src="https://user-images.githubusercontent.com/47033052/125451235-883518b9-6fec-4e3e-8e4d-0c66945ee638.PNG" width="20%" height="20%" /> 
+
+### 주요 기능
+
+- 우유 찾기
+  - 우유를 찍기 위한 카메라 기능
+  - 우유 사진을 분석하는 ImageClassification 모델
+
+- Setting
+  - 버전, 앱 소개, 개발자 소개
+  - 앱스토어 리뷰 남기러 가기
+  - 뷰에 따른 오디오 안내 기능 on/off (추가예정)
+
+---
+
 # 제 1회 DDA 해커톤 : Milkathon 2021.06.26(토)
 
 <img src="./images/01.png" width="70%"/>
@@ -34,7 +57,7 @@
 **지인**
 
 - [x] 데이터셋 만들기
-- [ ] 어떤 네트워크를 사용해서 전이학습 할지 정하기
+- [x] 어떤 네트워크를 사용해서 전이학습 할지 정하기
 
 **희지**
 
@@ -44,9 +67,9 @@
 
 **지인**
 
-- [ ] 모델 만들기
+- [x] 모델 만들기
 
-- [ ] 모델 mlmodel로 컨버팅
+- [x] 모델 mlmodel로 컨버팅
   - 참조 : https://developer.apple.com/videos/play/tech-talks/10154/
 
 **희지**
