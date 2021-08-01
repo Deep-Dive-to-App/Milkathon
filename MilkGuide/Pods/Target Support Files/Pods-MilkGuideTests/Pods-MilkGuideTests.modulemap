@@ -1,0 +1,6 @@
+framework module Pods_MilkGuideTests {
+  umbrella header "Pods-MilkGuideTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
